@@ -1,0 +1,15 @@
+This web application was created using WAMP Server.
+WAMP Server includes Apache server, PHP, and MYSQL.
+Here are some instrunctions on how to get this application functioning:
+1.Download and install WAMP server 
+2.Find the installation folder in your computer ex. C:\wamp
+3.Place this entire repository in the "www" folder in the wamp directory
+4.Start your wamp sever and wait until the icon on the right side of the taskbar is green
+*if the icon doesn't change to green there is mostly likely a port connection problem
+5. If the icon is green open your main browser and type in localhost in the address bar and press enter
+6. Look for the phpMyAdmin tool in the localhost page and click it
+7. Use phpMyAdmin to create a database named "Questions" by clicking new in the sidebar 
+8.Then click on the import tab database after you have created the database
+9.Browse for the Questions or Userlogin .sql files in this repository then scroll down and click go
+10. Repeat steps 8 and 9 for the second sql file
+You should be set! 
