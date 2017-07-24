@@ -1,0 +1,63 @@
+--
+-- MySQL 5.6.17
+-- Mon, 09 May 2016 06:18:08 +0000
+--
+
+CREATE TABLE `question_answer` (
+   `Category` varchar(50) not null,
+   `CategoryLevel` int(11) not null,
+   `Question` varchar(255) not null,
+   `Answer` varchar(255) not null
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO `question_answer` (`Category`, `CategoryLevel`, `Question`, `Answer`) VALUES 
+('Computer Architecture', '100', 'Along with the Control Unit and Register Set, this is a major component of the CPU.', 'What is an Arithmetic Logic Unit (ALU)?'),
+('Computer Architecture', '100', 'This is the smallest unit of memory for computers and is represented in 1s and 0s.', 'What is a bit?'),
+('Computer Architecture', '200', 'This is the common name for the group of programming languages which have very strong correspondence to the machine code instructions.', 'What is an Assembly Language?'),
+('Computer Architecture', '200', 'Question This is the common name for the group of programming languages which are furthest from the machine code instructions of the system. Some examples include C  , Java, and Python.', 'What is a High-Level Programming Language?'),
+('Computer Architecture', '300', 'One byte is equal to how many bits?', 'What is 8?'),
+('Computer Architecture', '300', 'RAM is considered to be this type of memory, in that it is completely erased when the computer is shut off.', 'What is volatile?'),
+('Computer Architecture', '400', 'In stack organization, the insertion operation is known as this.', 'What is push?'),
+('Computer Architecture', '400', 'This is the number system humans use, also known as base 10.', 'What is Decimal?'),
+('Computer Architecture', '500', 'This four letter word is also an acronym, and combines multiple physical drives into one single logical unit, often for data redudancy purposes.', 'What is RAID?'),
+('Computer Architecture', '500', 'This is the name for the digital circuit to perform addition of numbers. They are commonly found in the ALU and elsewhere inside the processor.', 'What is an Adder?'),
+('Computer Networking', '100', 'Encoding named after a city in England', 'What is Manchester Encoding?'),
+('Computer Networking', '100', 'The acronym OSI in terms of Computer Network', 'What is Open System Interconnection?'),
+('Computer Networking', '200', 'The total number of layers in the Network Model', 'What is 7?'),
+('Computer Networking', '200', 'San Jose based company known as  the king of networks', 'What is CISCO?'),
+('Computer Networking', '300', 'Special characteristic of Plenum cabling distinguishes it from non-Plenum cabling', 'What is non-toxic cable jacketing?'),
+('Computer Networking', '300', 'Ethernet cable type that can span a great distance between repeaters', 'What is 10base5?'),
+('Computer Networking', '400', 'Computer Network describes ATM as a communications across a network', 'What is a Asynchronous Transfer Mode?'),
+('Computer Networking', '400', 'Three terms MOST associated with networking', 'what is routers, bridges and hubs?'),
+('Computer Networking', '500', 'IP addresses not found on the Internet', 'What is 192.168.3.4?'),
+('Computer Networking', '500', 'Amount of bytes that describes a MAC address.', 'What is #6?'),
+('Database Management Systems', '100', 'This internationally recognized satndard language is used under commercial database management systems.', 'What is SQL?'),
+('Database Management Systems', '100', 'This word is data about data and in databses they are self-describing.', 'What is metadata?'),
+('Database Management Systems', '200', 'These Statements are used for querying and modifying data.', 'What is Data manipulation language (DML)?'),
+('Database Management Systems', '200', 'Users want to track this something and it is readily indentifiable in their enviroment.', 'What is an entity?'),
+('Database Management Systems', '300', 'One in which the identifier of one entity includes the identifier of another entity.', 'What is an ID-dependent entity?'),
+('Database Management Systems', '300', 'The number of entity classes in a relationship.', 'What is a degree of relationship?'),
+('Database Management Systems', '400', 'An entity that contains a set of attributes common to what would otherwise be modeled as several entities.', 'What is a supertype?'),
+('Database Management Systems', '400', 'An attribute of the supertype entity that identifies the associated subtype entity.', 'What is a discriminator?'),
+('Database Management Systems', '500', 'Modules of code that are stored in the DBMS and invoked when specific actions occur.', 'What are triggers?'),
+('Database Management Systems', '500', 'A table that stores the foreign key combinations that link two entities in a strong entity relationship.', 'What is an intersection table?'),
+('Operating Systems', '100', 'A program that acts as an intermediary between a user of a computer and the computer hardware.', 'what is an operating system?'),
+('Operating Systems', '100', 'The logical extension in which a CPU switches jobs so frequently that users can interact with each job while it\'s running.', 'What is Time Sharing?'),
+('Operating Systems', '200', 'Selecting which process should be executed next and allocates the CPU.', 'What is a CPU scheduler?'),
+('Operating Systems', '200', 'A small program that loads an operating system into memory. ', 'What is a CPU scheduler?'),
+('Operating Systems', '300', 'This type of scheduling gives minimum average waiting time for a given set of processes', 'What is shortest job first scheduling?'),
+('Operating Systems', '300', 'When there is enough total memory space to satisfy a request but the available spaces are contiguous.', 'What is external fragmentation?'),
+('Operating Systems', '400', 'Allows both parent and child processes to  initially share the same pages in memory.', 'What is copy-on-write?'),
+('Operating Systems', '400', 'If a process tries to access a page not brought into memory. The access to an invalid page causes what?', 'What is a page fault?'),
+('Operating Systems', '500', 'The NFS Architecture has three major layers which is the bottom layer?', 'What is NFS service layer?'),
+('Operating Systems', '500', 'This layer handles frames or fixed lengths, parts of packets, including any error detection and recovery.', 'What is the Data-Link layer?'),
+('Programming', '100', 'The operator that divides two numbers and returns the remainder as a result.', 'What is the modulus symbol?'),
+('Programming', '100', 'In JavaScript the keyword var is used in initialization', 'What is a variable?'),
+('Programming', '200', 'This loop executes the code inside the brackets before testing the condition', 'What is a Do-While loop?'),
+('Programming', '200', 'In Python this loop is mainly used for arrays.', 'What is for each loop?'),
+('Programming', '300', 'The method of securing variable and methods with the private or protected keywords.', 'What is Encapsulation?'),
+('Programming', '300', 'An algorithm or method to look through elements in a list one by one, for a specific element.', 'What is Linear Search?'),
+('Programming', '400', 'A method that executes differently depending what object calls it.', 'What is Polymorphism?'),
+('Programming', '400', 'The language within the SQL language that is used to work with data in tables.', 'What is Data Manipulation Language (DML)?'),
+('Programming', '500', 'This is the two word computer science term for the response to a deviation in computation that requires special processing.', 'What is Exception Handling?'),
+('Programming', '500', 'This keyword is used to refer to immediate parent class of a class.', 'What is super?');

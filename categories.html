@@ -1,0 +1,113 @@
+<!-- HTML file for the College Jeopardy Categories for Computer Science
+	Developed by Javier Flores, John Maurer, Danilo Morales-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+ <title>Categories</title>
+ <!--Css styling for the page -->
+<style>
+a:link, a:visited {
+    background-color: transparent;
+    color: orange;
+    padding: 50px 125px;
+    text-align: center;	
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: white;
+}
+
+
+table, th, td {
+    border: 2px solid orange;
+    border-collapse: collapse;
+}
+th, td {
+	color: orange;
+    padding: 0px;
+}
+
+.hiddenDiv{
+  display:none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-weight:bold;
+}
+</style>
+<!--End of CSS Styling -->
+<script>
+function hidequestion(divid){
+  var div = document.getElementById(divid);
+  div.className = 'hiddenDiv';
+
+  var points_field = document.getElementById(divid + '_valcol');
+  points_field.innerHTML = '&nbsp;';
+  points_field.className = 'questionColumnComplete';
+
+  return true;
+}
+</script>
+</head>
+<body style="background-color:blue;">
+<!-- Start of category table content-->
+<table style="width:100%">
+  <tr>
+    <th>Database Management Systems</th>
+    <th>Computer Architecture</th>		
+    <th>Programming</th>
+	<th>Computer Networking</th>
+	<th>Operating Systems</th>
+
+  </tr>
+  <tr>
+    <td><a href="http://localhost/collegejeopardy/Dms100.php?" target="_top">Level 1</a></td>
+    <td><a href="http://localhost/collegejeopardy/comarch100.php?" target="_top">Level 1</a></td>		
+    <td><a href="http://localhost/collegejeopardy/pro100.php?" target="_top">Level 1</a></td>
+	<td><a href="http://localhost/collegejeopardy/comnet100.php?" target="_top">Level 1</a></td>
+	<td><a href="http://localhost/collegejeopardy/OS100.php?" target="_top">Level 1</a></td>
+  </tr>
+  <tr>
+    <td><a href="http://localhost/collegejeopardy/Dms200.php?" target="_top">Level 2</a></td>
+    <td><a href="http://localhost/collegejeopardy/comarch200.php?" target="_top">Level 2</a></td>		
+    <td><a href="http://localhost/collegejeopardy/pro200.php?" target="_top">Level 2</a></td>
+	<td><a href="http://localhost/collegejeopardy/comnet200.php?" target="_top">Level 2</a></td>
+	<td><a href="http://localhost/collegejeopardy/OS200.php?" target="_top">Level 2</a></td>
+	
+  </tr>
+  <tr>
+	<td><a href="http://localhost/collegejeopardy/Dms300.php?" target="_top">Level 3</a></td>
+    <td><a href="http://localhost/collegejeopardy/comarch300.php?" target="_top">Level 3</a></td>		
+    <td><a href="http://localhost/collegejeopardy/pro300.php?" target="_top">Level 3</a></td>
+	<td><a href="http://localhost/collegejeopardy/comnet300.php?" target="_top">Level 3</a></td>
+	<td><a href="http://localhost/collegejeopardy/OS300.php?" target="_top">Level 3</a></td>
+     </tr>
+  
+  <tr>
+	<td><a href="http://localhost/collegejeopardy/Dms400.php?" target="_top">Level 4</a></td>
+    <td><a href="http://localhost/collegejeopardy/comarch400.php?" target="_top">Level 4</a></td>		
+    <td><a href="http://localhost/collegejeopardy/pro400.php?" target="_top">Level 4</a></td>
+	<td><a href="http://localhost/collegejeopardy/comnet400.php?" target="_top">Level 4</a></td>
+	<td><a href="http://localhost/collegejeopardy/OS400.php?" target="_top">Level 4</a></td>
+    </tr>
+  
+  <tr>
+    <td><a href="http://localhost/collegejeopardy/Dms500.php?" target="_top">Level 5</a></td>
+    <td><a href="http://localhost/collegejeopardy/comarch500.php?" target="_top">Level 5</a></td>		
+    <td><a href="http://localhost/collegejeopardy/pro500.php?" target="_top">Level 5</a></td>
+	<td><a href="http://localhost/collegejeopardy/comnet500.php?" target="_top">Level 5</a></td>
+	<td><a href="http://localhost/collegejeopardy/OS500.php?" target="_top">Level 5</a></td>
+  </tr>
+</table>
+<!-- End of category table content-->
+<script>
+	
+</script>
+
+
+</body>
+</html>
